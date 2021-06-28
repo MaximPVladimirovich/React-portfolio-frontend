@@ -1,1 +1,77 @@
+/* #242F40 
+  #FFFFFF
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: 'Rubik', sans-serif;
+}
+.App {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows:  auto ;
+  grid-template-areas: 
+  "header header header header header header header header"
+  ". home home home home home home ."
+  "project project project project project project project project "
+  ". about about about about about about ."
+  "footer footer footer footer footer footer footer footer";
+}
+
+header {
+  background-color: #1D1E2C;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+  grid-area: header;
+  padding: 0 40px 0 40px;
+}
+header div {
+  color: #F3FCF0;
+}
+.nav-name {
+  width: 50%;
+}
+.menu-item {
+  font-size: 1.5rem;
+}
+.nav-name h1 {
+  font-size: 2rem;
+}
+
+/* Home Component */
+.home {
+  grid-area: home;  
+}
+.home-banner {
+  background-color: #FFFFFF;
+  border: 1px solid;
+  width: 100%;
+  text-align: center;
+}
+
+/* Projects Component */
+.projects {
+  grid-area: project;
+  place-self: center;
+
+}
+
+/* About */
+.about {
+  grid-area: about;
+}
+
+/* Footer  */
+.footer {
+  grid-area: footer;
+  background-color: #1D1E2C;
+}
+
+
 

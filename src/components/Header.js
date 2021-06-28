@@ -2,19 +2,22 @@ import { Link } from "react-router-dom"
 function Header() {
     return (
         <header>
-            <h1> Maxim Bleeker</h1>
+            <div className="nav-name">
+                <h1> Maxim Bleeker</h1>
+            </div>
+
             <Link to="/">
-                <div >
+                <div className="menu-item">
                     Home
                 </div>
             </Link>
             <Link to="/projects">
-                <div >
+                <div className="menu-item">
                     Projects
                 </div>
             </Link>
             <Link to="/about">
-                <div >
+                <div className="menu-item">
                     About
                 </div>
             </Link>

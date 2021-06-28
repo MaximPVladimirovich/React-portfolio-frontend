@@ -1,7 +1,9 @@
-function Header() {
+function Footer() {
     return (
-        <h1> Header</h1>
+        <div className="footer">
+            Footer
+        </div>
     )
 }
 
-export default Header
+export default Footer

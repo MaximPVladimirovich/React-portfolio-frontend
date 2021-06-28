@@ -17,7 +17,7 @@ function Projects(props) {
     let loaded = function () {
         return projects.map(function (project) {
             return (
-                <div>
+                <div >
                     <h1>{project.name}</h1>
                     <img src={project.image} />
                     <a href={project.git}>
@@ -31,7 +31,11 @@ function Projects(props) {
         })
     }
 
-    return projects ? loaded() : <h1>Loading...</h1>
+    return (
+        <div className="projects">
+            {projects ? loaded() : <h1>Loading...</h1>}
+        </div>
+    )
 }
 
 export default Projects;

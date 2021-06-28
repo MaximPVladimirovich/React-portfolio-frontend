@@ -22,7 +22,7 @@ function About(props) {
 
     // returns jsx after data request is successfull
     let loaded = () => (
-        <div>
+        <div className="about">
             <h2>{about.name}</h2>
             <h2>{about.email}</h2>
             <p>{about.bio}</p>
