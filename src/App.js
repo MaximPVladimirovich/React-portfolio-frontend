@@ -21,7 +21,7 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/projects">
-          <Projects />
+          <Projects URL={"https://maximbleeker.herokuapp.com/projects"} />
         </Route>
         <Route exact path="/about">
           <About URL={"https://maximbleeker.herokuapp.com/about"} />

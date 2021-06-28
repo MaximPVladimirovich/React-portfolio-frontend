@@ -28,9 +28,7 @@ function About(props) {
             <p>{about.bio}</p>
         </div>
     )
-
     return about ? loaded() : <h1>Loading...</h1>
-
 }
 
 export default About;
