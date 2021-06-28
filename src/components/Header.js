@@ -2,10 +2,10 @@ import { Link } from "react-router-dom"
 function Header() {
     return (
         <header>
-            <h1> My Portfolio Page</h1>
+            <h1> Maxim Bleeker</h1>
             <Link to="/">
                 <div >
-                    HOME
+                    Home
                 </div>
             </Link>
             <Link to="/projects">
